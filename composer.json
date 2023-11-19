@@ -1,0 +1,37 @@
+{
+    "name": "zaghloul-soft/user-module",
+    "description": "User Decoupled Module HMVC Repository Based",
+    "type": "laravel-module",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Abdallah Zaghloul",
+            "email": "3bdallahzaghloul@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nwidart\\Modules\\LaravelModulesServiceProvider",
+                "Prettus\\Repository\\Providers\\RepositoryServiceProvider"
+            ],
+            "aliases": {}
+        },
+        "module-dir": "Modules"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\User\\": ""
+        }
+    },
+    "require": {
+        "nwidart/laravel-modules": "^10.0",
+        "joshbrw/laravel-module-installer": "^2.0",
+        "prettus/l5-repository": "^2.9",
+        "laravel/ui": "^4.2",
+        "livewire/livewire": "^3.1"
+    },
+    "require-dev": {
+        "mhmiton/laravel-modules-livewire": "^2.1"
+    }
+}
